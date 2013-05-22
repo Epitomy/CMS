@@ -68,7 +68,7 @@ namespace Kooboo.CMS.Sites.Extension.ModuleArea
             Site site = new Site(siteName);
             var siteModulesPath = Path.Combine(site.PhysicalPath, "Modules");
             var siteModuleNamePath = Path.Combine(siteModulesPath, moduleName);
-            var siteModuleSettingFile = Path.Combine(siteModulesPath, "settings.config");
+            var siteModuleSettingFile = Path.Combine(siteModuleNamePath, "settings.config");
             return siteModuleSettingFile;
         }
         public static ModuleSettings GetSiteModuleSettings(string moduleName, string siteName)
